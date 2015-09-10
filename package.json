@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-admob",
-  "version": "2.9.0",
+  "version": "2.9.1",
   "description": "Cordova Plugin for Google AdMob and DFP Ads",
   "cordova": {
     "id": "cordova-plugin-admob",
