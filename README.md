@@ -38,6 +38,7 @@ Platforms supported:
 - [x] Android, via SDK v7.8 (part of Google Play service platform)
 - [x] iOS, via SDK v7.4.1
 - [x] Windows Phone, via SDK v6.5.13
+- [x] Amazon-FireOS, via Android SDK (part of Google Play service platform)
 
 Ad Types:
 - [x] Banner
@@ -130,7 +131,7 @@ Step 1: Create Ad Unit Id for your banner and interstitial, in [AdMob portal](ht
 ```javascript
 // select the right Ad Id according to platform
     var admobid = {};
-    if( /(android)/i.test(navigator.userAgent) ) { // for android
+    if( /(android)/i.test(navigator.userAgent) ) { // for android & amazon-fireos
 		admobid = {
 			banner: 'ca-app-pub-xxx/xxx', // or DFP format "/6253334/dfp_example_ad"
 			interstitial: 'ca-app-pub-xxx/yyy'
@@ -249,15 +250,8 @@ Ad Format | Banner | Interstitial
 Click Rate | < 1% | 3-15%
 RPM (revenue per 1000 impression) |  US$ 0.5~4 | US$ 10~100
 
-- [x] RPM top countries (recent stat data):
-* USA, US$ 10~100, much higher than others
-* South Korea
-* Japan 
-* Sweden 
-* Norway 
-* China 
-* United Kingdom
-* Finland 
+- [x] RPM top countries (stat data in recent 2 months, FYI):
+![ScreenShot](https://github.com/floatinghotpot/cordova-admob-pro/raw/master/docs/stat_ref.png)
 
 - [x] Using SMART_BANNER to auto-fit the screen width, avoid using BANNER or FULL_BANNER (unless you are using DFP)
 
